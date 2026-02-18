@@ -1,6 +1,6 @@
-# ADS - Apple Dev Setup
+# PIKA - Apple Dev Kit
 
-> Apple Development Setup Script - 苹果开发环境一键配置脚本
+> PIKA - Apple Development Kit / 苹果开发套件
 
 配合 **OpenClaw** 实现远程 iOS/macOS 开发，让你在手机上就能控制 Mac 构建、测试、截图。
 
@@ -11,7 +11,7 @@
 在 Mac mini 终端执行：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/zhaodengfeng/apple-dev-setup/main/install-ios-dev.sh | bash
+curl -fsSL https://raw.githubusercontent.com/zhaodengfeng/PIKA/main/install-ios-dev.sh | bash
 ```
 
 安装完成后，在 Telegram 发送消息即可远程控制：
@@ -41,7 +41,7 @@ curl -fsSL https://raw.githubusercontent.com/zhaodengfeng/apple-dev-setup/main/i
 ## 📁 文件说明
 
 ```
-apple-dev-setup/
+PIKA/
 ├── install-ios-dev.sh      # 一键安装脚本（首次运行）
 ├── ios-dev-automation.sh   # 自动化任务脚本（日常使用）
 └── README.md               # 本文件
@@ -161,7 +161,7 @@ sudo xcodebuild -license accept
 # 编辑 ~/.openclaw/openclaw.json
 
 # 6. 复制脚本
-cp ios-dev-automation.sh ~/.openclaw/workspace/
+curl -fsSL https://raw.githubusercontent.com/zhaodengfeng/PIKA/main/ios-dev-automation.sh -o ~/.openclaw/workspace/ios-dev-automation.sh
 chmod +x ~/.openclaw/workspace/ios-dev-automation.sh
 ```
 
